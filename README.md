@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# React CRUD Operations with Class Components and Hooks
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository demonstrates how to perform CRUD (Create, Read, Update, Delete) operations in React using two different methods: class components and functional components with hooks.
 
-## Available Scripts
+## Components
 
-In the project directory, you can run:
+### 1. Timeclass Component (Class Component)
 
-### `npm start`
+- Displays the current date and time using the `Date` object.
+- Uses the class-based approach with state to manage the date and time.
+- Updates the date and time every second using `setTimeout`.
+- Utilizes `componentDidUpdate` lifecycle method to log the current time whenever the component updates.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 2. Timehook Component (Functional Component with Hooks)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Displays the current date and time.
+- Utilizes functional components with hooks like `useState`.
+- Updates the date and time every second using `setTimeout`.
+- Simplifies state management using `useState` for managing date and time.
 
-### `npm test`
+### 3. List Component (Class Component)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Manages a list of departments with CRUD operations.
+- Uses the class-based approach with state to manage the list of departments, the current department being edited, and whether the component is in update mode or not.
+- Provides input fields for adding new departments or updating existing ones.
+- Handles delete and update operations for individual departments.
 
-### `npm run build`
+### 4. Reduce Component (Functional Component with Reducer and Hooks)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Manages a list of departments with CRUD operations.
+- Utilizes `useReducer` hook along with a reducer function to manage complex state logic.
+- Handles adding, updating, and deleting departments.
+- Demonstrates a different approach to state management using reducers and hooks.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## How to Use
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository.
+2. Install dependencies using `npm install`.
+3. Start the development server using `npm start`.
+4. Access the application in your browser at `http://localhost:3000`.
 
-### `npm run eject`
+Feel free to explore each component to understand the differences between class components and functional components with hooks in React.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Author
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+[Your Name]
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Last Updated: May 25, 2024
